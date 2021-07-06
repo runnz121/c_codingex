@@ -4,12 +4,12 @@ int over(int x){
 	int cnt1 = 0;
 
 	if(x <= 0){
-		return cnt1;
+		return 0;
 	}else{
 		over(x/10);
 		cnt1++;
 	}
-	return 0;
+	return 1;
 }
 
 int main(){
@@ -25,7 +25,7 @@ int main(){
 			cnt++;
 		}else{
 			idx = over(i);
-			cnt += idx;
+			cnt += idx*2;
 			idx = 0;
 		}
 	}
