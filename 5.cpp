@@ -6,7 +6,6 @@ int main(){
 	char s1[15];
 	int age;
 	
-	//freopen("input.txt","rt",stdin);
 	
 	scanf("%s", &s1);
 	
